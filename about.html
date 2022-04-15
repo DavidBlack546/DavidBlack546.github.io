@@ -1,0 +1,68 @@
+<! DOCTYPE html >
+<html>
+	<head>
+		<title>SET08101-Headings</title>
+	</head>
+	<style>
+    body {font-family: Arial, Helvetica, sans-serif; background: #1F2833;}
+    * {box-sizing: border-box;}
+	.navigation {
+  list-style: none;
+  margin: 0;
+
+  background: #0B0C10;
+
+  display: flex;
+
+  flex-flow: row wrap;
+  justify-content: flex-end;
+}
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: #66FCF1;
+}
+
+.navigation a:hover {
+  background: darken(#66FCF1, 10%); 
+}
+
+@media all and (max-width: 800 px) {
+  .navigation {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600 px) {
+  .navigation {
+  flex-flow: column wrap;
+  padding: 0;
+  }
+
+
+  .navigation a {
+  text-align: center;
+  padding: 10 px;
+  border-top: 1px solid rgba(255 ,255 ,255 ,0.3);
+    border-bottom: 1px solid rgba(0 ,0 ,0 ,0.1);
+  }
+
+  .navigation li:last-of-type a {
+    border-bottom : none;
+  }
+}
+    </style>
+	<body>
+	<ul class="navigation">
+        <li><a href="quiz3.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+		<h1 style ="background-color:#66FCF1 ; color:#0B0C10">About This Quiz</h1
+			>
+		<p style ="text-align:left ; background-color:#97CAEF ; color:#0B0C10">i am a whole bunch of text about this quiz and how you should play it......
+			.</p>
+	</body>
+</html>

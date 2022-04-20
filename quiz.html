@@ -1,3 +1,6 @@
+<!modified from Copyright (c) 2022 by Sulaimon Olaniran (https://codepen.io/Sulaimon-Olaniran/pen/zYKJLjK)>
+
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -7,7 +10,7 @@
         <title>SET08101 General Knowledge Quiz</title>
     </head>
 
-    <body onload="NextQuestion(0)">
+    <body onload="NextQ(0)">
         <ul class="navigation">
         <li><a href="quiz3.html">Home</a></li>
         <li><a href="about.html">About</a></li>
@@ -19,18 +22,20 @@
           
                 <div class="modal-content-container">
               
-                    <h1>Congratulations, Quiz Completed.</h1>
+                    <h1>Quiz Completed</h1>
               
                     <div class="grade-details">
-                        <p>Attempts : 10</p>
-                        <p>Wrong Answers : <span id="wrong-answers"></span></p>
+                        <p>Answered Questions : 10</p>
                         <p>Right Answers : <span id="right-answers"></span></p>
-                        <p>Grade : <span id="grade-percentage"></span>%</p>
+                        <p>Wrong Answers : <span id="wrong-answers"></span></p>
+                        <p>Percentage : <span id="grade-percentage"></span>%</p>
+                        <br><br>
                         <p ><span id="remarks"></span></p>
+                        <br><br>
                     </div>
               
                     <div class="modal-button-container">
-                        <button onclick="closeScoreModal()">Continue</button>
+                        <button onclick="closeScoreModal()">Restart Quiz</button>
                     </div>
               
                 </div>
@@ -65,7 +70,7 @@
                 <span>
                     <input type="radio" id="option-one" name="option" class="radio" value="optionA" />
                     <label for="option-one" class="option" id="option-one-label"></label>
-                </span><br>
+                </span>
               
 
                 <span>
@@ -89,7 +94,7 @@
             </div>
 
             <div class="next-button-container">
-                <button onclick="handleNextQuestion()">Next Question</button>
+                <button onclick="handleNextQ()">Next Question</button>
             </div>
 
         </div>

@@ -1,99 +1,10 @@
+<!modified from https://www.w3schools.com/howto/howto_css_contact_form.asp>
 <!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {font-family: Arial, Helvetica, sans-serif; background: #1F2833;}
-* {box-sizing: border-box;}
+<link rel="stylesheet" href ="quiz3.css">
 
-input[type=text], select, textarea {
-  background-color: #97CAEF;
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-input[type=submit] {
-  background-color: #66FCF1;
-  color: #0B0C10;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: darken(#66FCF1, 50%);
-}
-
-.container {
-  border-radius: 5px;
-  background-color: #0B0C10;
-  padding: 20px;
-  color: #66FCF1;
-}
-
-.navigation {
-  list-style: none;
-  margin: 0;
-
-  background: #0B0C10;
-
-  display: flex;
-
-  flex-flow: row wrap;
-  justify-content: flex-end;
-}
-
-.navigation a {
-  text-decoration: none;
-  display: block;
-  padding: 1em;
-  color: #66FCF1;
-}
-
-.navigation a:hover {
-  background: darken(#66FCF1, 10%); 
-}
-
-@media all and (max-width: 800 px) {
-  .navigation {
-    justify-content: space-around;
-  }
-}
-
-@media all and (max-width: 600 px) {
-  .navigation {
-  flex-flow: column wrap;
-  padding: 0;
-  }
-
-
-  .navigation a {
-  text-align: center;
-  padding: 10 px;
-  border-top: 1px solid rgba(255 ,255 ,255 ,0.3);
-    border-bottom: 1px solid rgba(0 ,0 ,0 ,0.1);
-  }
-
-  .navigation li:last-of-type a {
-    border-bottom : none;
-  }
-}
-
-h3 {
-  color: #66FCF1;
-}
-
-p{
-  color: #66FCF1;
-}
-</style>
 </head>
 <body>
 <ul class="navigation">
@@ -101,11 +12,7 @@ p{
   <li><a href="about.html">About</a></li>
   <li><a href="contact.html">Contact</a></li>
 </ul>
-<h3>Contact Site Admin</h3>
-<p>SET08101<br>
-   David Black<br>
-   40457734@live.napier.ac.uk<br>
-   Edinburgh Napier University</p>
+<h2 style ="background-color:#66FCF1 ; color:#0B0C10">Contact</h2>
 <div class="container">
   <form action="/action_page.php">
     <label for="fname">First Name</label>
@@ -113,6 +20,9 @@ p{
 
     <label for="lname">Last Name</label>
     <input type="text" id="lname" name="lastname" placeholder="Enter your surname..">
+
+    <label for="lname">Email</label>
+    <input type="text" id="email" name="email" placeholder="Enter your email..">
 
     <label for="country">Country</label>
     <select id="country" name="country">

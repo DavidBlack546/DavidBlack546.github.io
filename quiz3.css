@@ -1,6 +1,40 @@
-
+/*modified from Copyright (c) 2022 by Sulaimon Olaniran (https://codepen.io/Sulaimon-Olaniran/pen/zYKJLjK)*/
 body {
   background: #1F2833;
+  font-family: Arial, Helvetica, sans-serif; 
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  background-color: #97CAEF;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #66FCF1;
+  color: #0B0C10;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: darken(#66FCF1, 50%);
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #0B0C10;
+  padding: 20px;
+  color: #66FCF1;
 }
 h1 {
   text-align: center;
@@ -34,11 +68,8 @@ h3 {
 .navigation {
   list-style: none;
   margin: 0;
-
   background: #0B0C10;
-
   display: flex;
-
   flex-flow: row wrap;
   justify-content: flex-end;
 }
@@ -194,7 +225,7 @@ input[type=radio]:checked ~ .option {
     outline: none;
 }
 .next-button-container button:hover{
-    background-color: rgb(143, 93, 93);
+    background-color: white;
 }
 
 .modal-container{
@@ -216,7 +247,7 @@ input[type=radio]:checked ~ .option {
 }
 
 .modal-content-container{
-    height: 20rem;
+    height: 25rem;
     width: 25rem;
     background-color: rgb(43, 42, 42);
     display: flex;
@@ -229,13 +260,13 @@ input[type=radio]:checked ~ .option {
 .modal-content-container h1{
     font-size: 1.3rem;
     height: 3rem;
-    color: lightgray;
+    color: whitesmoke;
     text-align: center;
 }
 
 .grade-details{
     width: 15rem;
-    height: 10rem;
+    height: 25rem;
     display: flex;
     flex-direction: column;
     align-items: center;
